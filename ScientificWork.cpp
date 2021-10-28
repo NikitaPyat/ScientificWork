@@ -1,32 +1,23 @@
+// Test_complex.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+//
+
 #include <iostream>
+#include <complex>
+#include "Model_2L.h"
 
-struct Specifications {
-    int E0;
-    int E1;
-    int E2;
-    int w;
-    int mu;
-    int h;
-    int Z0;
-    int lambda;
-    int omega;
-};
-
-Specifications sp = { 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5};
-
-int eta0 = sqrt(sp.lambda ^ 2 - sp.omega ^ 2 * sp.E0 * sp.mu);
-int eta1 = sqrt(sp.lambda ^ 2 - sp.omega ^ 2 * sp.E1 * sp.mu);
-int eta2 = sqrt(sp.lambda ^ 2 - sp.omega ^ 2 * sp.E2 * sp.mu);
-
-double eta01() {
-    return (eta0 - eta1) / (eta0 + eta1);
-}
-
-double eta12() {
-    return (eta1 - eta2) / (eta1 + eta2);
-}
-
-int main() {
-    int R1 = eta01() * exp(-2 * eta1 * sp.h);
-    int R0 = (R1 + eta01()) / (R1 * eta01() + 1);
+int main()
+{
+    setlocale(LC_ALL, "ru");
+    std::cout << "Привет мир!\n";
+    double eps1 = 1.0;
+    double eps2 = 2.0;
+    double h = 4.0;
+    double z = 2;
+    double z0 = 4;
+    double w = 16;
+    double lambda = 3;
+    Model_2L& model = *(new Model_2L(eps1, eps2, h, z0, w, z, lambda));
+    /*std::cout << "eps1 : " << model.dUdeps1() << std::endl;
+    std::cout << "eps2 : " << model.dUdeps2() << std::endl;
+    std::cout << "h : " << model.dUdh() << std::endl;*/
 }
