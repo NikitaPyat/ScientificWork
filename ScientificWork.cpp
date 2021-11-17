@@ -17,7 +17,11 @@ int main()
     double w = 16;
     double lambda = 3;
     Model_2L& model = *(new Model_2L(eps1, eps2, h, z0, w, z, lambda));
-    /*std::cout << "eps1 : " << model.dUdeps1() << std::endl;
-    std::cout << "eps2 : " << model.dUdeps2() << std::endl;
-    std::cout << "h : " << model.dUdh() << std::endl;*/
+    std::cout << "dU/deps1 : " << model.dUdeps1() << std::endl;
+    std::cout << "dU/deps2 : " << model.dUdeps2() << std::endl;
+    std::cout << "dU/dh : " << model.dUdh() << std::endl;
+
+    std::cout << "dW/deps1 : " << model.dWdeps1() << std::endl;
+    std::cout << "dW/deps2 : " << model.dWdeps2() << std::endl;
+    std::cout << "dW/dh : " << model.dWdh() << std::endl;
 }

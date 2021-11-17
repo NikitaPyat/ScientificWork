@@ -1,0 +1,26 @@
+ru
+Подинтегральная функция
+eps1 = 2 * eps0
+eps2 = 6 * eps0
+h = 2 lw_eps0
+###
+xTitle
+yTitle
+5
+1
+2
+2,3
+3,5
+4
+First Vector
+1
+2
+2
+2
+1
+Second Vector
+2
+2,5
+3,4
+4.6
+0,3

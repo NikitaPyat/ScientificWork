@@ -1,0 +1,26 @@
+en
+Parameters
+eps1 = 2 * eps0
+eps2 = 6 * eps0
+h = 2 * lw_eps0
+###
+x in m
+Field
+5
+1
+1.5
+2.5
+4
+5
+First Vector
+1.1
+2
+2.5
+2
+1.1
+Second Vector
+2
+2.5
+3
+1.7
+0.3

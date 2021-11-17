@@ -1,0 +1,30 @@
+D:\EM_Docs_Спецсеминар\Курсовая работа Никиты Пятакова\Wpf_Chart\Wpf_Chart\bin\Debug\Wpf_Chart.exe.config
+D:\EM_Docs_Спецсеминар\Курсовая работа Никиты Пятакова\Wpf_Chart\Wpf_Chart\bin\Debug\Wpf_Chart.exe
+D:\EM_Docs_Спецсеминар\Курсовая работа Никиты Пятакова\Wpf_Chart\Wpf_Chart\bin\Debug\Wpf_Chart.pdb
+D:\EM_Docs_Спецсеминар\Курсовая работа Никиты Пятакова\Wpf_Chart\Wpf_Chart\obj\Debug\MainWindow.g.cs
+D:\EM_Docs_Спецсеминар\Курсовая работа Никиты Пятакова\Wpf_Chart\Wpf_Chart\obj\Debug\App.g.cs
+D:\EM_Docs_Спецсеминар\Курсовая работа Никиты Пятакова\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart_MarkupCompile.cache
+D:\EM_Docs_Спецсеминар\Курсовая работа Никиты Пятакова\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart_MarkupCompile.lref
+D:\EM_Docs_Спецсеминар\Курсовая работа Никиты Пятакова\Wpf_Chart\Wpf_Chart\obj\Debug\MainWindow.baml
+D:\EM_Docs_Спецсеминар\Курсовая работа Никиты Пятакова\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart.g.resources
+D:\EM_Docs_Спецсеминар\Курсовая работа Никиты Пятакова\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart.Properties.Resources.resources
+D:\EM_Docs_Спецсеминар\Курсовая работа Никиты Пятакова\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart.csproj.GenerateResource.cache
+D:\EM_Docs_Спецсеминар\Курсовая работа Никиты Пятакова\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart.csproj.CoreCompileInputs.cache
+D:\EM_Docs_Спецсеминар\Курсовая работа Никиты Пятакова\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart.exe
+D:\EM_Docs_Спецсеминар\Курсовая работа Никиты Пятакова\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart.pdb
+D:\EM_Docs_Спецсеминар\Курсовая работа Никиты Пятакова\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart.csprojAssemblyReference.cache
+D:\ScientificWork\Wpf_Chart\Wpf_Chart\bin\Debug\Wpf_Chart.exe.config
+D:\ScientificWork\Wpf_Chart\Wpf_Chart\bin\Debug\Wpf_Chart.exe
+D:\ScientificWork\Wpf_Chart\Wpf_Chart\bin\Debug\Wpf_Chart.pdb
+D:\ScientificWork\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart.csproj.AssemblyReference.cache
+D:\ScientificWork\Wpf_Chart\Wpf_Chart\obj\Debug\MainWindow.g.cs
+D:\ScientificWork\Wpf_Chart\Wpf_Chart\obj\Debug\App.g.cs
+D:\ScientificWork\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart_MarkupCompile.cache
+D:\ScientificWork\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart_MarkupCompile.lref
+D:\ScientificWork\Wpf_Chart\Wpf_Chart\obj\Debug\MainWindow.baml
+D:\ScientificWork\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart.g.resources
+D:\ScientificWork\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart.Properties.Resources.resources
+D:\ScientificWork\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart.csproj.GenerateResource.cache
+D:\ScientificWork\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart.csproj.CoreCompileInputs.cache
+D:\ScientificWork\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart.exe
+D:\ScientificWork\Wpf_Chart\Wpf_Chart\obj\Debug\Wpf_Chart.pdb
