@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <complex>
+#include <math.h>
 class Model_2L
 {
 	const double mu = 4 * 3.14159 * 1.0E-7;
@@ -32,14 +33,16 @@ private:
 	double F1;
 
 public:
-	Model_2L(double eps1, double eps2, double h, double z0, double w, double z, double lambda)
+	Model_2L(double lambda)
 	{
-		this->eps1 = eps1;
-		this->eps2 = eps2;
-		this->h = h;
-		this->z0 = z0;
-		this->z = z;
-		this->w = w;
+		this->eps1 = 2*eps0;
+		this->eps2 = 6*eps0;
+
+		double lambda0 = 2 * 3.14159 / sqrt(eps0 * mu);
+		this->h = lambda0 / 2;
+		this->z0 = 5 * 1.0E-7;
+		this->z = 0;
+		this->w = 1;
 		this->lambda = lambda;
 
 		k0k0 = w * w * eps0 * mu;
