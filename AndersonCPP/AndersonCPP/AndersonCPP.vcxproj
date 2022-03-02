@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{dbc9845b-5ab8-418a-b0d5-f6e2c61a18e0}</ProjectGuid>
-    <RootNamespace>ScientificWork</RootNamespace>
+    <ProjectGuid>{f888c852-5a78-4f30-97e0-45856d3b3517}</ProjectGuid>
+    <RootNamespace>AndersonCPP</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,9 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Model_2L.h" />
-    <ClCompile Include="ScientificWork.cpp" />
-    <ClCompile Include="U1.h" />
+    <ClCompile Include="AndersonCPP.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HankelTransformsByAnderson.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
