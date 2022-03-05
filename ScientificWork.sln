@@ -1,14 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.1.32210.238
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScientificWork", "ScientificWork.vcxproj", "{DBC9845B-5AB8-418A-B0D5-F6E2C61A18E0}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AndersonCPP", "AndersonCPP\AndersonCPP\AndersonCPP.vcxproj", "{F888C852-5A78-4F30-97E0-45856D3B3517}"
-	ProjectSection(ProjectDependencies) = postProject
-		{DBC9845B-5AB8-418A-B0D5-F6E2C61A18E0} = {DBC9845B-5AB8-418A-B0D5-F6E2C61A18E0}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

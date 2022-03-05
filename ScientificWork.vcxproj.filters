@@ -18,11 +18,8 @@
     <ClCompile Include="ScientificWork.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Model_2L.h">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="U1.h">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
