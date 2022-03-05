@@ -2,6 +2,8 @@
 #include <iostream>
 #include <complex>
 #include <math.h>
+
+using namespace std;
 class U1
 {
 	const double mu = 4 * 3.14159 * 1.0E-7;
@@ -15,20 +17,19 @@ private:
 	double w;
 	double z;
 	double lambda;
-
 	double k0k0;
 	double k1k1;
 	double k2k2;
-	double nu0;
-	double nu1;
-	double nu2;
-	double nu12;
-	double nu01;
-	double R0;
-	double R1;
 
-	double a0;
-	double b0;
+	complex<double> nu0;
+	complex<double> nu1;
+	complex<double> nu2;
+	complex<double> nu12;
+	complex<double> nu01;
+	complex<double> R0;
+	complex<double> R1;
+	complex<double> a0;
+	complex<double> b0;
 
 public:
 	U1() {
@@ -44,7 +45,7 @@ public:
 		k2k2 = w * w * eps2 * mu;
 	}
 
-	double getU1(double lambda) {
+	complex<double> getU1(double lambda) {
 
 		double lambda0 = 2 * 3.14159 / sqrt(eps0 * mu);
 		this->h = lambda0 / 2;
@@ -55,8 +56,8 @@ public:
 		nu2 = sqrt(lambda * lambda - k2k2);
 		nu12 = (nu1 - nu2) / (nu1 + nu2);
 		nu01 = (nu0 - nu1) / (nu0 + nu1);
-		R1 = nu12 * exp(-2 * nu1 * h);
-		R0 = (R1 + nu01) / (R1 * nu01 + 1);
+		R1 = nu12 * exp(-2 * nu1.real() * h);
+		R0 = (R1 + nu01) / (R1.real() * nu01.real() + 1);
 
 		a0 = R0 * mu * exp(-nu0 * z0) / nu0 - mu * exp(nu0 * z0) / nu0;
 		b0 = mu * exp(-nu0 * z0) / nu0;
