@@ -2,11 +2,11 @@
 #include <iostream>
 #include <complex>
 #include <math.h>
-
 using namespace std;
 class U1
 {
-	const double mu = 4 * 3.14159 * 1.0E-7;
+	const double mu0 = 4 * 3.14159 * 1.0E-7;
+	const double mu = 1.55;
 	const double eps0 = 8.8541878e-12;
 
 private:
@@ -32,36 +32,36 @@ private:
 	complex<double> b0;
 
 public:
-	U1() {
+	U1(double lambda)
+	{
 		this->eps1 = 2 * eps0;
 		this->eps2 = 6 * eps0;
 
-		this->z0 = 5 * 1.0E-7;
-		this->z = 5 * 1.0E-8;
 		this->w = 1;
-
-		k0k0 = w * w * eps0 * mu;
-		k1k1 = w * w * eps1 * mu;
-		k2k2 = w * w * eps2 * mu;
-	}
-
-	complex<double> getU1(double lambda) {
-
-		double lambda0 = 2 * 3.14159 / sqrt(eps0 * mu);
+		long double lambda0 = 2 * 3.14159 / (w * sqrt(eps0 * mu0));
 		this->h = lambda0 / 2;
+		this->z0 = 5 * 1.0E-10;
+		this->z = 0;
 		this->lambda = lambda;
 
-		nu0 = sqrt(lambda * lambda - k0k0);
-		nu1 = sqrt(lambda * lambda - k1k1);
-		nu2 = sqrt(lambda * lambda - k2k2);
-		nu12 = (nu1 - nu2) / (nu1 + nu2);
-		nu01 = (nu0 - nu1) / (nu0 + nu1);
-		R1 = nu12 * exp(-2 * nu1.real() * h);
-		R0 = (R1 + nu01) / (R1.real() * nu01.real() + 1);
+		this->k0k0 = w * w * eps0 * mu0;
+		this->k1k1 = w * w * eps1 * mu;
+		this->k2k2 = w * w * eps2 * mu;
+		this->nu0 = sqrt(complex<double>(lambda * lambda - k0k0, 0));
+		this->nu1 = sqrt(complex<double>(lambda * lambda - k1k1, 0));
+		this->nu2 = sqrt(complex<double>(lambda * lambda - k2k2, 0));
+		this->nu12 = (nu1 - nu2) / (nu1 + nu2);
+		this->nu01 = (nu0 - nu1) / (nu0 + nu1);
+		this->R1 = nu12 * exp(complex<double>(-2, 0) * nu1 * h);
+		this->R0 = (R1 + nu01) / ((R1 * nu01) + 1.0);
 
-		a0 = R0 * mu * exp(-nu0 * z0) / nu0 - mu * exp(nu0 * z0) / nu0;
-		b0 = mu * exp(-nu0 * z0) / nu0;
+		this->a0 = R0 * mu * exp(-nu0 * z0) / nu0;
+		this->b0 = mu * exp(-nu0 * z0) / nu0;
+	}
 
+	complex<double> getU1() {
+		complex<double> out = a0 * exp(-sqrt(lambda * lambda - k0k0) * z) + b0 * exp(sqrt(lambda * lambda - k0k0) * z);
+		cout << nu1 << " " << out << endl;
 		return a0 * exp(-sqrt(lambda * lambda - k0k0) * z) + b0 * exp(sqrt(lambda * lambda - k0k0) * z);
 	}
 };
